@@ -6,7 +6,6 @@ orgs.newOrg('eclipse-dash') {
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Tools for Eclipse Committers",
     email: "dash-dev@eclipse.org",
-    members_can_change_project_visibility: false,
     name: "The Eclipse Dash Project",
     packages_containers_internal: false,
     packages_containers_public: false,
