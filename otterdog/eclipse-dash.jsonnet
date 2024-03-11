@@ -23,9 +23,6 @@ orgs.newOrg('eclipse-dash') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
-      workflows+: {
-        actions_can_approve_pull_request_reviews: false,
-      },
     },
     orgs.newRepo('nodejs-wrapper') {
       allow_merge_commit: true,
@@ -36,9 +33,6 @@ orgs.newOrg('eclipse-dash') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
-      workflows+: {
-        actions_can_approve_pull_request_reviews: false,
-      },
     },
   ],
 }
