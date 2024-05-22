@@ -18,8 +18,6 @@ orgs.newOrg('eclipse-dash') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('nodejs-wrapper') {
@@ -28,8 +26,6 @@ orgs.newOrg('eclipse-dash') {
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       description: "This  wrapper makes it easy to integrate and run The Eclipse Dash License Tool in Eclipse Foundation project repositories. ",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
   ],
