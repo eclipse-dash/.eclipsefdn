@@ -11,6 +11,11 @@ orgs.newOrg('eclipse-dash') {
       actions_can_approve_pull_request_reviews: false,
     },
   },
+  secrets+: [
+    orgs.newOrgSecret('GITLAB_API_TOKEN') {
+      value: "pass:bots/technology.dash/gitlab.eclipse.org/api-token",
+    },
+  ],
   _repositories+:: [
     orgs.newRepo('.github') {
       allow_merge_commit: true,
