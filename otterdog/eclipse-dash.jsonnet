@@ -19,6 +19,21 @@ orgs.newOrg('eclipse-dash') {
       dependabot_alerts_enabled: false,
       web_commit_signoff_required: false,
     },
+    orgs.newRepo('dash-licenses') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin"
+      ],
+      code_scanning_default_setup_enabled: true,
+      default_branch: "master",
+      delete_branch_on_merge: false,
+      dependabot_security_updates_enabled: true,
+      description: "Extract license information from content.",
+      has_discussions: true,
+      homepage: "http://projects.eclipse.org/projects/technology.dash",
+      web_commit_signoff_required: false,
+    },
     orgs.newRepo('nodejs-wrapper') {
       allow_merge_commit: true,
       allow_update_branch: false,
