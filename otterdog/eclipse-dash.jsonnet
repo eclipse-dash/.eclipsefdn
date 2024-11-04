@@ -39,6 +39,8 @@ orgs.newOrg('eclipse-dash') {
       homepage: "http://projects.eclipse.org/projects/technology.dash",
       web_commit_signoff_required: false,
     },
+    orgs.newRepo('quevee') {
+    },
     orgs.newRepo('nodejs-wrapper') {
       allow_merge_commit: true,
       allow_update_branch: false,
