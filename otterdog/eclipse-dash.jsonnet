@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-dash') {
+orgs.newOrg('technology.dash', 'eclipse-dash') {
   settings+: {
     blog: "https://projects.eclipse.org/projects/technology.dash",
     description: "Tools for Eclipse Committers",
